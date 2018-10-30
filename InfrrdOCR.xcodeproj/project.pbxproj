@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17EAFF5D21887E0C00552A49 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EAFF5C21887E0C00552A49 /* HomeViewController.swift */; };
 		4817DEF421887A0B0071CB84 /* InfrrdOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4817DEEA21887A0B0071CB84 /* InfrrdOCR.framework */; };
 		4817DEF921887A0B0071CB84 /* InfrrdOCRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4817DEF821887A0B0071CB84 /* InfrrdOCRTests.swift */; };
 		4817DEFB21887A0B0071CB84 /* InfrrdOCR.h in Headers */ = {isa = PBXBuildFile; fileRef = 4817DEED21887A0B0071CB84 /* InfrrdOCR.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17EAFF5C21887E0C00552A49 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4817DEEA21887A0B0071CB84 /* InfrrdOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InfrrdOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4817DEED21887A0B0071CB84 /* InfrrdOCR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfrrdOCR.h; sourceTree = "<group>"; };
 		4817DEEE21887A0B0071CB84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				4817DEED21887A0B0071CB84 /* InfrrdOCR.h */,
 				4817DEEE21887A0B0071CB84 /* Info.plist */,
+				17EAFF5C21887E0C00552A49 /* HomeViewController.swift */,
 			);
 			path = InfrrdOCR;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					4817DEE921887A0B0071CB84 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					4817DEF221887A0B0071CB84 = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EAFF5D21887E0C00552A49 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		4817DEFF21887A0B0071CB84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ai.infrrd.training.InfrrdOCR;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		4817DF0021887A0B0071CB84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		4817DF0221887A0B0071CB84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = InfrrdOCRTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +415,7 @@
 		4817DF0321887A0B0071CB84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = InfrrdOCRTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
